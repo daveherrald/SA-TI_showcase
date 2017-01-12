@@ -1,0 +1,110 @@
+
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ admin, power ]
+
+### EVENT TYPES
+
+[eventtypes]
+export = system
+
+
+### PROPS
+
+[props]
+export = system
+
+
+### TRANSFORMS
+
+[transforms]
+export = system
+
+
+### LOOKUPS
+
+[lookups]
+export = system
+
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[visualizations/tagcloud]
+export = system
+
+[app/install/install_source_checksum]
+version = 6.5.1
+modtime = 1482511608.614684000
+
+[views/contents]
+version = 6.5.1
+modtime = 1484005235.774485000
+
+[views/twitter]
+owner = admin
+version = 6.5.1
+modtime = 1483136972.124310000
+
+[views/github]
+owner = admin
+version = 6.5.1
+modtime = 1483137123.037559000
+
+[views/pastebin]
+owner = admin
+version = 6.5.1
+modtime = 1483137249.297916000
+
+[views/linked_in]
+owner = admin
+version = 6.5.1
+modtime = 1483139359.927381000
+
+[views/the_harvester]
+owner = admin
+version = 6.5.1
+modtime = 1483139394.179310000
+
+[views/recon_ng]
+owner = admin
+version = 6.5.1
+modtime = 1483139424.232063000
+
+[views/typo_squatting]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.1
+modtime = 1483139442.833708000
+
+[views/passive_dns]
+owner = admin
+version = 6.5.1
+modtime = 1484062428.759629000
+
+[views/tango]
+owner = admin
+version = 6.5.1
+modtime = 1484062783.025920000
+
+[views/phishme]
+owner = admin
+version = 6.5.1
+modtime = 1484063305.262118000
+
+[views/stoq]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.1
+modtime = 1484063327.073757000
+
+[views/servicenow]
+owner = admin
+version = 6.5.1
+modtime = 1484063343.335027000
