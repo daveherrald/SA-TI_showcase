@@ -6,7 +6,7 @@
       <html>
         Adversaries will often attempt to confuse targets by creating malicious domains that are visually similar to a legitimate domain. These malicous domains  intentiaonally use typos, homoglyphs, and common dictionary words to exploit users.  Lenny Zeltser has a wonderful <a href="https://zeltser.com/domain-name-variations-in-phishing/">blog post</a> that discusses those methods in more detail. A great method for detecting these camoflagued domains is using a python tool named dnstwist, a "domain name permutation engine".  This app supplies an example output of dnstwist  tool and brief instructions on how to setup dnstwist and splunk in your environment
 
-        Install DNS twist using the instructions from dnstwist's <a href="https://github.com/elceef/dnstwist">github page</a>. Once installed make sure you record the path to the dictionaries or execution path. In this example we have used all of the dnstwist options for data gathering and outp<code>dnstwist trump.com -w -g -b -s -m -c -t 100 -d english.dict</code> <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/dnstwist.png"/>
+        Install DNS twist using the instructions from dnstwist's <a href="https://github.com/elceef/dnstwist">github page</a>. Once installed make sure you record the path to the dictionaries or execution path. In this example we have used all of the dnstwist options for data gathering and outp<code>dnstwist trump.com -w -g -b -s -m -c -t 100 -d english.dict</code> <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/passive_dns.png"/>
       </html>
     </panel>
     <panel>

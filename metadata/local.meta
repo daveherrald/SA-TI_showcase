@@ -15,14 +15,14 @@ modtime = 1485631358.926371000
 
 [views/typo_squatting]
 version = 6.5.2
-modtime = 1485634056.670085000
+modtime = 1485645460.687923000
 
 [views/google]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 6.5.2
-modtime = 1485640345.041569000
+modtime = 1485645432.731815000
 
 [views/google_alerts]
 access = read : [ * ], write : [ admin, can_delete, power ]
@@ -33,4 +33,4 @@ modtime = 1485639971.267386000
 
 [views/passive_dns]
 version = 6.5.2
-modtime = 1485641585.104734000
+modtime = 1485645046.393613000
