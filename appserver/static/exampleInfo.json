@@ -1,20 +1,6 @@
 [
 
     {
-        "id": "twitter",
-        "title": "Twitter",
-        "short-description": "Mining Twitter for threat intelligence",
-        "category": ["Social Media"]
-    },
-
-    {
-        "id": "github",
-        "title": "Github",
-        "short-description": "Mining Github for threat intelligence",
-        "category": ["Software Development"]
-    },
-
-    {
         "id": "typo_squatting",
         "title": "Typo Squatting",
         "short-description": "Identifying malicious typos of your organization's domains.",
@@ -27,29 +13,41 @@
         "category": ["DNS"]
     },
     {
-        "id": "pastebin",
-        "title": "Pastebin",
-        "short-description": "Identifying evidence of threats to your oganizaion on Pastebin.",
-        "category": ["Pastes"]
-    },
-    {
-        "id": "linked_in",
-        "title": "LinkedIn",
-        "short-description": "Identifying evidence of threats to your oganizaion on LinkedIn.",
-        "category": ["Social Media"]
+        "id": "recon_ng",
+        "title": "recon-ng",
+        "short-description": "Learn what attackers already know about you using recon-ng",
+        "category": ["Recon"]
     },
     {
         "id": "the_harvester",
         "title": "The Harvester",
         "short-description": "Learn what attackers already know about you using The Harvester",
         "category": ["Recon"]
+    },{
+        "id": "linked_in",
+        "title": "LinkedIn",
+        "short-description": "Identifying evidence of threats to your oganizaion on LinkedIn.",
+        "category": ["Social Media"]
     },
     {
-        "id": "recon_ng",
-        "title": "recon-ng",
-        "short-description": "Learn what attackers already know about you using recon-ng",
-        "category": ["Recon"]
+        "id": "phishme",
+        "title": "Phishme",
+        "short-description": "Enrich alerts with data about this users security awareness training experience.",
+        "category": ["Awareness Training"]
     },
+    {
+        "id": "github",
+        "title": "Github",
+        "short-description": "Mining Github for threat intelligence",
+        "category": ["Software Development"]
+    },
+    {
+        "id": "pastebin",
+        "title": "Pastebin",
+        "short-description": "Identifying evidence of threats to your oganizaion on Pastebin.",
+        "category": ["Pastes"]
+    },
+    
     {
         "id": "tango",
         "title": "Tango Honeypot Intelligence",
@@ -67,11 +65,6 @@
         "title": "ServiceNow",
         "short-description": "Enrich alerts with data from trouble tickets from ServiceNow.",
         "category": ["Trouble Ticketing"]
-    },
-    {
-        "id": "phishme",
-        "title": "Phishme",
-        "short-description": "Enrich alerts with data about this users security awareness training experience.",
-        "category": ["Awareness Training"]
     }
+    
 ]

@@ -1,0 +1,10 @@
+[savedsearches/Interesting%20PhishMe%20Fields]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.1
+modtime = 1484319121.549474000
+
+[nav/default]
+version = 6.5.1
+modtime = 1484319159.244571000
