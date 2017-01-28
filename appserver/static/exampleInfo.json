@@ -65,6 +65,12 @@
         "title": "ServiceNow",
         "short-description": "Enrich alerts with data from trouble tickets from ServiceNow.",
         "category": ["Trouble Ticketing"]
+    },
+    {
+        "id": "google",
+        "title": "Google",
+        "short-description": "Extract intelligence from Google alerts.",
+        "category": ["Search Engines"]
     }
     
 ]
