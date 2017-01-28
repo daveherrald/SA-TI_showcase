@@ -1,0 +1,43 @@
+<dashboard>
+  <label>PassiveDNS in Splunk!</label>
+  <row>
+    <panel>
+      <title>Passive DNS</title>
+      <html>
+        Adversaries will often attempt to confuse targets by creating malicious domains that are visually similar to a legitimate domain. These malicous domains  intentiaonally use typos, homoglyphs, and common dictionary words to exploit users.  Lenny Zeltser has a wonderful <a href="https://zeltser.com/domain-name-variations-in-phishing/">blog post</a> that discusses those methods in more detail. A great method for detecting these camoflagued domains is using a python tool named dnstwist, a "domain name permutation engine".  This app supplies an example output of dnstwist  tool and brief instructions on how to setup dnstwist and splunk in your environment
+
+        Install DNS twist using the instructions from dnstwist's <a href="https://github.com/elceef/dnstwist">github page</a>. Once installed make sure you record the path to the dictionaries or execution path. In this example we have used all of the dnstwist options for data gathering and outp<code>dnstwist trump.com -w -g -b -s -m -c -t 100 -d english.dict</code> <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/dnstwist.png"/>
+      </html>
+    </panel>
+    <panel>
+      <title>dnstwist and Splunk</title>
+      <html>
+        Once you are familar with using dnstwist and its output look at ingesting that data into Splunk
+            <ol>
+          <li>Using the domain you are attempting to emulate, create a cronjob that outputs the results of dnstwist into a CSV on a daily or weekly schedule</li>
+            <center>
+            <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/cronjob.png"/>
+          </center>
+            <li>Configure Splunk to ingest the output of dnstwist csv as a <a href="https://docs.splunk.com/Documentation/Splunk/latest/PivotTutorial/AddlookupfilestoSplunk">lookup table</a>
+          </li>
+            <li>Use this lookup table with saved searches to find malicious domains in your network</li>
+        </ol>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Sample data harvested from dnstwist using trump.com as an example</title>
+        <search>
+          <query>|inputlookup dnstwist.csv| fields domain-name dns-mx geoip-country whois-created whois-updated</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="count">10</option>
+        <option name="rowNumbers">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
