@@ -5,23 +5,31 @@
       <title>Google Alerts </title>
       <html>
          <blockquote>"Google Alerts is a content change detection and notification service, offered by the search engine company Google. The service sends emails to the user when it finds new results—such as web pages, newspaper articles, blogs, or scientific research—that match the user's search term(s)" - the internetz </blockquote>
-        Google alerts can be a great method to keep up-to-date on exploits or compromises that may affect your orginization. For example if you use the common content management system (CMS) Joomla! to host your external website, you may wish to set up a google alert for "Joomla + exploit".  
-        Install DNS twist using the instructions from dnstwist's <a href="https://github.com/elceef/dnstwist">github page</a>. Once installed make sure you record the path to the dictionaries or execution path. In this example we have used all of the dnstwist options for data gathering and outp<code>dnstwist trump.com -w -g -b -s -m -c -t 100 -d english.dict</code> <img src="/static/app/SA-TI_Showcase/images/google_alerts.png"/>
+        Google alerts can be a great method to keep up-to-date on exploits or compromises that may affect your organization. For example if you use the common content management system (CMS) Joomla! to host your external website, you may wish to set up a google alert for "Joomla + exploit.  Often Google alerts will inform you of exploits or vulnerabilities much faster than the vendor themselves!
+        <br></br>
+        <br></br>
+        <img src="/static/app/SA-TI_Showcase/images/google_alerts.png"/>
       </html>
     </panel>
     <panel>
       <title>Google Alerts RSS and Splunk!</title>
       <html>
-        Once you are familar with using dnstwist and its output look at ingesting that data into Splunk
+        There are several steps that you will need to take to get Google alerts in your Splunk instance:
+        <br></br>
+        <br></br>
             <ol>
-          <li>Using the domain you are attempting to emulate, create a cronjob that outputs the results of dnstwist into a CSV on a daily or weekly schedule</li>
+          <li>Once you have determined WHAT you want Google to alert on make sure to setup the “deliver to” option as RSS.</li>
             <center>
             <img src="/static/app/SA-TI_Showcase/images/google_alerts2.png"/>
+        <br></br>
+        <br></br>
             </center>
-            <img src="/static/app/SA-TI_Showcase/images/google_alerts3.png"/>
-            <li>Configure Splunk to ingest the output of dnstwist csv as a <a href="https://docs.splunk.com/Documentation/Splunk/latest/PivotTutorial/AddlookupfilestoSplunk">lookup table</a>
+            <li>To ingest the Google alert RSS feed, install <a href=" https://splunkbase.splunk.com/app/2646/"> Syndication Input app</a>
+created by the ever talented Splunker Luke Murphey.  This will allow you to bring RSS feeds into a Splunk index. Once you have Google alerts into a Splunk index you can create alerts for specific events or issues.
           </li>
-            <li>Use this lookup table with saved searches to find malicious domains in your network</li>
+        <br></br>
+        <br></br>
+        <img src="/static/app/SA-TI_Showcase/images/google_alerts3.png"/>
         </ol>
       </html>
     </panel>

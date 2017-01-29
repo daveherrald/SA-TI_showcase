@@ -22,7 +22,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 6.5.2
-modtime = 1485706166.740325000
+modtime = 1485708988.470089000
 
 [views/google_alerts]
 access = read : [ * ], write : [ admin, can_delete, power ]
