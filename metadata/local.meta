@@ -34,3 +34,12 @@ modtime = 1485639971.267386000
 [views/passive_dns]
 version = 6.5.2
 modtime = 1485703747.705244000
+
+[views/phishme]
+version = 6.5.1
+modtime = 1485719582.687571000
+
+[views/decoy_doc]
+owner = admin
+version = 6.5.1
+modtime = 1485720465.503004000

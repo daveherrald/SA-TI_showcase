@@ -1,3 +1,34 @@
 <dashboard>
-  <label>passive_dns</label>
+  <label>PassiveDNS in Splunk!</label>
+  <row>
+    <panel>
+      <title>Passive DNS</title>
+      <html>
+        PassiveDNS is a well known method of finding out which IP a domain resolved to before, which domains an IP has resolved to, and the first/last time a domain has been seen [1].For most organizations, security analysts depend upon tools like farsightDB and passivetotal to provide that information. These commercial (or free) services have sensors all of the world and can provide an unparalleled view of every domain and its history.  However, there is value to reviewing the history of domains and IPs on your network.  Steve Brant (a Splunker with a stunning beard) wrote a great <a href="https://splunkbase.splunk.com/app/3261/">Splunk App</a> that collects local DNS records and provides a great interface for searching for history of domains on a network. The app was created as a companion tool for a presentation that he and fellow Splunker Kathy Wang gave at Virus Bulletin 2016.
+        <br></br>
+        <br></br>
+[1] <a href="https://nullsecure.org/building-your-own-passivedns-feed">https://nullsecure.org/building-your-own-passivedns-feed/</a> - Brian Warehime
+
+      </html>
+    </panel>
+    <panel>
+      <title>PassiveDNS and you!</title>
+      <html>
+        The Splunk PassiveDNS app has several pre-requisites before installation. 
+<ol>
+  <li>DNS logs :-)</li> 
+<li> <a href="https://splunkbase.splunk.com/app/1621/">CIM app</a> </li> 
+<li><a href="https://splunkbase.splunk.com/app/2734/">URL Toolbox</a></li>
+<li><a href="https://splunkbase.splunk.com/app/3261/">PassiveDNS App</a></li>
+</ol>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+        <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/passive_dns.png"/>
+      </html>
+    </panel>
+  </row>
 </dashboard>

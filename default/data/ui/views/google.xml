@@ -1,3 +1,52 @@
 <dashboard>
   <label>Google Alerts</label>
+  <row>
+    <panel>
+      <title>Google Alerts </title>
+      <html>
+         <blockquote>"Google Alerts is a content change detection and notification service, offered by the search engine company Google. The service sends emails to the user when it finds new results—such as web pages, newspaper articles, blogs, or scientific research—that match the user's search term(s)" - the internetz </blockquote>
+        Google alerts can be a great method to keep up-to-date on exploits or compromises that may affect your organization. For example if you use the common content management system (CMS) Joomla! to host your external website, you may wish to set up a google alert for "Joomla + exploit.  Often Google alerts will inform you of exploits or vulnerabilities much faster than the vendor themselves!
+        <br></br>
+        <br></br>
+        <img src="/static/app/SA-TI_Showcase/images/google_alerts.png"/>
+      </html>
+    </panel>
+    <panel>
+      <title>Google Alerts RSS and Splunk!</title>
+      <html>
+        There are several steps that you will need to take to get Google alerts in your Splunk instance:
+        <br></br>
+        <br></br>
+            <ol>
+          <li>Once you have determined WHAT you want Google to alert on make sure to setup the “deliver to” option as RSS.</li>
+            <center>
+            <img src="/static/app/SA-TI_Showcase/images/google_alerts2.png"/>
+        <br></br>
+        <br></br>
+            </center>
+            <li>To ingest the Google alert RSS feed, install <a href=" https://splunkbase.splunk.com/app/2646/"> Syndication Input app</a>
+created by the ever talented Splunker Luke Murphey.  This will allow you to bring RSS feeds into a Splunk index. Once you have Google alerts into a Splunk index you can create alerts for specific events or issues.
+          </li>
+        <br></br>
+        <br></br>
+        <img src="/static/app/SA-TI_Showcase/images/google_alerts3.png"/>
+        </ol>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Sample google alerts using "Trump"</title>
+        <search>
+          <query>|inputlookup google.csv | table published title summary url</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="count">10</option>
+        <option name="rowNumbers">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
 </dashboard>

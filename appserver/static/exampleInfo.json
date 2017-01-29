@@ -19,11 +19,6 @@
         "category": ["Recon"]
     },
     {
-        "id": "the_harvester",
-        "title": "The Harvester",
-        "short-description": "Learn what attackers already know about you using The Harvester",
-        "category": ["Recon"]
-    },{
         "id": "linked_in",
         "title": "LinkedIn",
         "short-description": "Identifying evidence of threats to your oganizaion on LinkedIn.",
@@ -34,25 +29,6 @@
         "title": "Phishme",
         "short-description": "Enrich alerts with data about this users security awareness training experience.",
         "category": ["Awareness Training"]
-    },
-    {
-        "id": "github",
-        "title": "Github",
-        "short-description": "Mining Github for threat intelligence",
-        "category": ["Software Development"]
-    },
-    {
-        "id": "pastebin",
-        "title": "Pastebin",
-        "short-description": "Identifying evidence of threats to your oganizaion on Pastebin.",
-        "category": ["Pastes"]
-    },
-    
-    {
-        "id": "tango",
-        "title": "Tango Honeypot Intelligence",
-        "short-description": "Capture honeypot data to use as Threat Intelligence",
-        "category": ["Honeypots"]
     },
     {
         "id": "stoq",
@@ -71,6 +47,12 @@
         "title": "Google",
         "short-description": "Extract intelligence from Google alerts.",
         "category": ["Search Engines"]
+    },
+    {
+        "id": "decoy_doc",
+        "title": "Decoy",
+        "short-description": "Decoy documents.",
+        "category": ["Deception"]
     }
     
 ]
