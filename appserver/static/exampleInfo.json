@@ -13,12 +13,6 @@
         "category": ["DNS"]
     },
     {
-        "id": "recon_ng",
-        "title": "recon-ng",
-        "short-description": "Learn what attackers already know about you using recon-ng",
-        "category": ["Recon"]
-    },
-    {
         "id": "linked_in",
         "title": "LinkedIn",
         "short-description": "Identifying evidence of threats to your oganizaion on LinkedIn.",
