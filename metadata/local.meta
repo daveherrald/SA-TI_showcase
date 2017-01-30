@@ -7,7 +7,7 @@ modtime = 1484319121.549474000
 
 [nav/default]
 version = 6.5.1
-modtime = 1484319159.244571000
+modtime = 1485786025.702740000
 
 [views/linked_in]
 version = 6.5.1
@@ -43,3 +43,8 @@ modtime = 1485722443.726803000
 owner = admin
 version = 6.5.1
 modtime = 1485720465.503004000
+
+[views/welcome]
+owner = admin
+version = 6.5.1
+modtime = 1485788201.408615000

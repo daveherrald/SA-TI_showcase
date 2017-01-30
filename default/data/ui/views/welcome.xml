@@ -1,0 +1,42 @@
+<dashboard>
+  <label>Welcome</label>
+  <row>
+    <panel>
+      <html> 
+      <table>
+        <tr><td width="20%">
+          <img src="/static/app/SA-TI_showcase/vgarden.png"/>
+        </td>
+        <td>
+<h2>Welcome to the companion app for "The Threat Intel Victory Garden: Creating, Capturing, and Using Your Own
+Threat Intelligence Using Open Source Tools" presented on Jan 31, 2017 at the SANS Cyber Threat Intelligence (CTI) Summit</h2><p/>  
+<b>Abstract:</b><p/>Many threat intel programs ignore the most valuable source of intelligence: their own
+environment. In the battle to secure your organization, the benefits of “growing your own”
+threat intelligence are many. Self-sourced threat intel is quite possibly the most relevant origin
+of indicators when detecting and investigating actionable threats faced by your organization.
+Home-grown threat intel is also easy to prioritize and enrich because much of the original
+context is available. Unfortunately, many threat intelligence programs are hampered by manual
+processes and procedures. In this talk we will briefly discuss some common internal sources of
+threat intelligence, then present some novel collection techniques including open source tools
+like the stoQ framework and open source honeypot solutions. We will show through recorded
+demonstrations how indicators from these sources can be sourced, centrally stored, managed,
+and leveraged in an automated method. Pointers to usable code/resources that attendees can
+take advantage of immediately will be provided.<p/>
+ Dave Herrald (@daveherrald), Security Architect, Splunk
+Ryan Kovar (@meansec), Staff Security Strategist, Splunk<p/>
+
+<a href="contents">Review the showcase.</a>
+
+          </td></tr>
+          </table>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+
+      </html>
+    </panel>
+  </row>
+</dashboard>
