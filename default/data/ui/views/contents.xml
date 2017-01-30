@@ -1,4 +1,4 @@
 <dashboard script="contents.js" stylesheet="contents.css" hideEdit="false">
-    <label>Showcase</label>
-    <row><panel><html></html></panel></row>
+  <label>Showcase</label>
+  <row><panel><html></html></panel></row>
 </dashboard>

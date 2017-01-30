@@ -4,13 +4,16 @@
     <panel>
       <html> 
       <table>
-        <tr><td width="20%">
+        <tr>
+            <td width="20%">
           <img src="/static/app/SA-TI_showcase/vgarden.png"/>
         </td>
         <td>
 <h2>Welcome to the companion app for "The Threat Intel Victory Garden: Creating, Capturing, and Using Your Own
-Threat Intelligence Using Open Source Tools" presented on Jan 31, 2017 at the SANS Cyber Threat Intelligence (CTI) Summit</h2><p/>  
-<b>Abstract:</b><p/>Many threat intel programs ignore the most valuable source of intelligence: their own
+Threat Intelligence Using Open Source Tools" presented on Jan 31, 2017 at the SANS Cyber Threat Intelligence (CTI) Summit</h2>
+              <p/>  
+<b>Abstract:</b>
+              <p/>Many threat intel programs ignore the most valuable source of intelligence: their own
 environment. In the battle to secure your organization, the benefits of “growing your own”
 threat intelligence are many. Self-sourced threat intel is quite possibly the most relevant origin
 of indicators when detecting and investigating actionable threats faced by your organization.
@@ -27,15 +30,9 @@ Ryan Kovar (@meansec), Staff Security Strategist, Splunk<p/>
 
 <a href="contents">Review the showcase.</a>
 
-          </td></tr>
+          </td>
+          </tr>
           </table>
-      </html>
-    </panel>
-  </row>
-  <row>
-    <panel>
-      <html>
-
       </html>
     </panel>
   </row>

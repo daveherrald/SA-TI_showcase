@@ -47,4 +47,8 @@ modtime = 1485720465.503004000
 [views/welcome]
 owner = admin
 version = 6.5.1
-modtime = 1485788201.408615000
+modtime = 1485789682.574755000
+
+[views/contents]
+version = 6.5.1
+modtime = 1485790309.953810000
