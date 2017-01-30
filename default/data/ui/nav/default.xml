@@ -1,7 +1,7 @@
 <nav color="#5379AF">
-  <view name="overview" />
+  <view name="welcome" default='true'/>
 
-  <view name="contents" default='true' />
+  <view name="contents"  />
 
   <view name="dashboards" />
     <view name="reports" />
