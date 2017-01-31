@@ -60,6 +60,11 @@ owner = admin
 version = 6.5.1
 modtime = 1483137249.297916000
 
+[views/linked_in]
+owner = admin
+version = 6.5.1
+modtime = 1483139359.927381000
+
 [views/the_harvester]
 owner = admin
 version = 6.5.1
@@ -98,3 +103,8 @@ export = none
 owner = admin
 version = 6.5.1
 modtime = 1484063327.073757000
+
+[views/servicenow]
+owner = admin
+version = 6.5.1
+modtime = 1484063343.335027000
