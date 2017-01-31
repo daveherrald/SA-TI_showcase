@@ -25,12 +25,6 @@
         "category": ["Threat Intel Sources"]
     },
     {
-        "id": "servicenow",
-        "title": "ServiceNow",
-        "short-description": "Enrich alerts with data from trouble tickets from ServiceNow.",
-        "category": ["Threat Intel Sources"]
-    },
-    {
         "id": "google",
         "title": "Google",
         "short-description": "Extract intelligence from Google alerts.",
