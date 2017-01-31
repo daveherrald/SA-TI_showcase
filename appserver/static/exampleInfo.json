@@ -13,12 +13,6 @@
         "category": ["Threat Intel Sources"]
     },
     {
-        "id": "linked_in",
-        "title": "LinkedIn",
-        "short-description": "Identifying evidence of threats to your oganizaion on LinkedIn.",
-        "category": ["Threat Intel Sources"]
-    },
-    {
         "id": "phishme",
         "title": "Phishme",
         "short-description": "Enrich alerts with data about this users security awareness training experience.",
