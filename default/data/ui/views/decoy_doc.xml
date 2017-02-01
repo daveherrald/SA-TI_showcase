@@ -1,3 +1,42 @@
 <dashboard>
-  <label>decoy_doc</label>
+  <label>Decoy Documents</label>
+  <row>
+    <panel>
+      <title>Decoy Documents</title>
+      <html>
+        The concept of Decoy Documents has been around since the Egyptians left fake papyrus military orders out for the Assyrians.  In recent times however, the concept not only includes disinformation but also the concept of alerting.  Organizations can leave conspicuous documents in directories that are attractive to an adversary.  Once the adversary reads or touches the file, the defender is alerted.  Very similar to a canary in the coal mine alerting miners about invisible dangerous gasses.  This “alerting” can be accomplished in a variety of ways but this app shows two. The first being to actually inject the word document with an embedded call back or “beacon”. This technique is commonly used by marketing companies to judge the efficacy of their marketing campaign. The goal is to have the word document reach back via HTTP  or DNS.  The second technique is to enable extra auditing on a “decoy” document or directory and setup alerting for those “trapped” alerts. 
+      </html>
+    </panel>
+    <panel>
+      <title>How to setup Decoy Documents</title>
+      <html>
+        Several different methods of setting up decoy documents.  The idea of “call back” documents is not new and this message is outlined in several tutorials including <a href="https://icanthackit.wordpress.com/2015/02/17/how-i-used-adhd-to-phish-my-coworkers/">this one</a>.  The goal is to “embed” invisible html code into a document that will “phone home” when opened up. Since this document should NEVER be opened, you can arrange for infrastructure to received these call backs. The code below shows an example of this technique.
+          <br></br>
+          <br></br>
+          <center>
+            <img style="border: gray 1px solid;" src="/static/app/SA-TI_Showcase/images/decoydoc1.png"/>
+          </center>
+          <br></br>
+          <br></br>
+          Another method (which is shown in logs below) is to set a document or directory with enhanced auditing.  This enhanced auditing will create logs showing any “reading” or “access” of these documents. Make sure to setup whitelists in your Splunk instance so that you don’t get false positives from AV or legitimate business processes that touch files on operating systems.  Another exciting idea would be to add “honey” users to the document so that an organization could find lateral movement credential harvesting
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Sample data from a decoy document with extra auditing enabled</title>
+        <search>
+          <query> |inputlookup decoylogs.csv| search EventCode=4663 
+                  | stats VALUES(Object_Name) VALUES(user) by Process_Name 
+                  | rename VALUES(user) AS user VALUES(Object_Name) AS "Object Name" </query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="count">10</option>
+        <option name="rowNumbers">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
 </dashboard>
